@@ -1,0 +1,28 @@
+title: Tanakashi Portfolio
+description: 個人開発・技術ログまとめ
+lang: ja
+author:
+  name: Tanakashi
+  email: ""
+
+theme: jekyll-theme-dinky
+
+plugins:
+  - jekyll-seo-tag
+  # - jekyll-github-metadata
+repository: tanakashi/tanakashi.github.io
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""            # すべてのパス
+      type: "projects"    # コレクション名
+    values:
+      layout: default
+
+include:
+  - _includes/head-custom.html
